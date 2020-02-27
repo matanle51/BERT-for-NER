@@ -65,9 +65,9 @@ def load_data():
     corresponding tags for train, validation and test.
     :return: train, validation and test data.
     """
-    train = convert_corpus_to_lists(ConllCorpusReader('CoNLL-2003', 'eng.train', ['words', 'pos', 'ignore', 'chunk']))
-    val = convert_corpus_to_lists(ConllCorpusReader('CoNLL-2003', 'eng.testa', ['words', 'pos', 'ignore', 'chunk']))  # testa will be our val set
-    test = convert_corpus_to_lists(ConllCorpusReader('CoNLL-2003', 'eng.testb', ['words', 'pos', 'ignore', 'chunk']))
+    train = convert_corpus_to_lists(ConllCorpusReader('CoNLL-2003', 'train.txt', ['words', 'pos', 'ignore', 'chunk']))
+    val = convert_corpus_to_lists(ConllCorpusReader('CoNLL-2003', 'valid.txt', ['words', 'pos', 'ignore', 'chunk']))  # testa will be our val set
+    test = convert_corpus_to_lists(ConllCorpusReader('CoNLL-2003', 'test.txt', ['words', 'pos', 'ignore', 'chunk']))
 
     return train, val, test
 
