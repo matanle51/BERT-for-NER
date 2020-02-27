@@ -248,7 +248,7 @@ def train_model(model, train_dataloader, epoch, optimizer):
         steps += 1
 
         if steps % 100 == 0:
-            print(f'Epoch: {epoch + 1}, Iteration: {(idx + 1)}/{len(train_dataloader)}, Training Loss: {loss.item():.4f}')
+            print(f'Epoch: {epoch + 1}, Iteration: {(idx + 1)}/{len(train_dataloader)}, Training Loss: {total_epoch_loss/steps:.4f}')
 
     return total_epoch_loss/len(train_dataloader)
 
