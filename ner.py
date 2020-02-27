@@ -8,8 +8,8 @@ from torch.utils.data import TensorDataset, DataLoader, RandomSampler
 from seqeval.metrics import accuracy_score, classification_report
 from sklearn import metrics
 
-MAX_SEN_LEN = 50
-BATCH_SIZE = 4  # TODO: return to 32, BERT was trained with 32
+MAX_SEN_LEN = 64
+BATCH_SIZE = 32
 NUM_EPOCHS = 5
 
 ner_to_id = {}
