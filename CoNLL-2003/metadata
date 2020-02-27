@@ -1,0 +1,6 @@
+--- 
+format: SequenceTagging
+restricted_access: false
+description: English named-entity recognition from 2003 CoNLL Shared Task.
+name: ner-conll2003-eng
+https://www.kaggle.com/alaakhaled/conll003-englishversion/kernels
